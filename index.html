@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1"/>
+		<title>3D builder</title>
+		<link rel="stylesheet" href="style.css"/>
+		<script src="builder.js"></script>
+	</head>
+	<body>
+		<div class="wrapper">
+			<div id="scene">
+			</div>
+			<div id="controls">
+			<input type="hidden" value="" id="divId"/>
+				<div id="createDiv">
+					<h1 class="caption">Create Div</h1>
+					<fieldset>
+						<label for="width">Width:</label>
+						<input type="number" id="width" min="0" max="1000" />
+						<label for="height">Height:</label>
+						<input type="number" id="height" min="0" max="1000" />
+						<label for="bgColor">Background Color:</label>
+						<input type="color" id="bgColor"/>
+						<label for="border">Border:</label>
+						<input type="number" id="border" min="0" max="50" />
+						<label for="borderColor">Border Color:</label>
+						<input type="color" id="borderColor"/>
+						<input type="button" value="Create Div" id="create"/>
+					</fieldset>
+				</div>
+				<div id="rotateDiv">
+					<h1 class="caption">Rotate Div</h1>
+					<fieldset>
+						<label for="rotatex">Rotate on x axis:</label>
+						<input type="number" id="rotatex" min="0" max="360" />
+						<label for="rotatey">Rotate on y axis:</label>
+						<input type="number" id="rotatey" min="0" max="360" />
+						<label for="rotatez">Rotate on z axis:</label>
+						<input type="number" id="rotatez" min="0" max="360" />
+					</fieldset>
+				</div>
+				<div id="moveDiv">
+				<h1 class="caption">Move Div</h1>
+				<fieldset>
+					<label for="movex">Move on x axis:</label>
+					<input type="number" id="movex" min="0" max="1000" />
+					<label for="movey">Move on y axis:</label>
+					<input type="number" id="movey" min="0" max="1000" />
+					<label for="movez">Move on z axis:</label>
+					<input type="number" id="movez" min="0" max="1000" />
+				</fieldset>
+				</div>
+			</div>
+		</div>
+	</body>	
+</html>
